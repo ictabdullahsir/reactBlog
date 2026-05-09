@@ -1,0 +1,32 @@
+.footer {
+  background: var(--ink); color: var(--paper-warm);
+  margin-top: 6rem; padding: 4rem 0 2rem;
+}
+.footer-grid {
+  display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem;
+  padding-bottom: 3rem; border-bottom: 1px solid rgba(250,248,243,0.15);
+}
+.footer-logo {
+  font-family: var(--serif); font-size: 1.5rem; font-weight: 700;
+  color: var(--paper); display: block; margin-bottom: 0.8rem;
+}
+.footer-brand p { font-size: 0.9rem; color: rgba(250,248,243,0.6); line-height: 1.6; }
+.footer-links h4 {
+  font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--gold-light); margin-bottom: 1rem;
+}
+.footer-links a {
+  display: block; font-size: 0.95rem; color: rgba(250,248,243,0.7);
+  padding: 0.25rem 0; transition: color 0.2s; text-decoration: none;
+}
+.footer-links a:hover { color: var(--paper); }
+.footer-bottom {
+  display: flex; justify-content: space-between; align-items: center;
+  padding-top: 1.5rem; font-size: 0.8rem; color: rgba(250,248,243,0.4);
+}
+.footer-credit { font-family: var(--mono); }
+
+@media (max-width: 640px) {
+  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
+}

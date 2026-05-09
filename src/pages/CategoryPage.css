@@ -1,0 +1,18 @@
+.category-page { padding-bottom: 4rem; }
+.category-header {
+  background: var(--ink); color: var(--paper);
+  padding: 4rem 0 3rem;
+}
+.category-header h1 {
+  font-family: var(--serif); font-size: 3rem; font-weight: 900;
+  letter-spacing: -0.02em; margin-bottom: 0.5rem;
+}
+.category-header p { font-family: var(--mono); font-size: 0.85rem; color: rgba(250,248,243,0.5); }
+.category-header .post-breadcrumb { color: rgba(250,248,243,0.5); margin-bottom: 1rem; }
+.category-header .post-breadcrumb a { color: rgba(250,248,243,0.5); text-decoration: none; }
+.category-header .post-breadcrumb a:hover { color: var(--gold-light); }
+.posts-grid-cat {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+.empty-state { text-align: center; color: var(--ink-muted); padding: 4rem; font-size: 1.1rem; }
